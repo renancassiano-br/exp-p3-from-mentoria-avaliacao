@@ -3,3 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body::before{
+  content: "";
+  width: 100%;
+  height: 465px;
+  background: #293241;
+  position: absolute;
+  z-index: -1;
+}
+body {
+  background: #BFD7E4;
+}
+
+main {
+  width: 750px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: white;
+}
+main header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+main header h1 {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+main header p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
+}
+
+#stars {
+  background-image: url(../img/bg-stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 225px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stars-elements {
+  height: 21px;
+  width: 21px;
+}
+
+.no-selected {
+  background: #000000;
+  opacity: 0.2;
+}
+.selected {
+  background: #ffffff;
+}
