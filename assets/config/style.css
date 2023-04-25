@@ -70,6 +70,11 @@ main header p {
   display: flex;
   gap: 6px;
 }
+#stars input:hover
+, .check:hover
+, .buttons:hover {
+  cursor: pointer;
+}
 
 .star::before {
   content: "";
@@ -219,4 +224,8 @@ fieldset > div .input-wrapper:nth-child(5){
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
+}
+.buttons:hover {
+  background: #ec5140;
+  font-weight: bold;
 }
